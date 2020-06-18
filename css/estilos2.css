@@ -1,0 +1,226 @@
+/* .header{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 10vh;
+    padding-top: 20px;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+    position: absolute;
+    transform: all 0.3s;
+    background-color: hotpink;
+    z-index: 9;
+    top: 0px;
+    width: 100%;
+   }
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav ul li{
+    display: flex;
+}
+
+.nav ul li a{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    padding: 0.25rem 0;
+    margin: 0 2.50rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.nav ul li.logo .black{
+    display: none;
+}
+
+
+.nav ul li.logo a{
+    margin: 0 4rem;
+}
+
+.nav-icon{
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    padding: 5px;
+    width: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.nav-icon{
+    background: #333;
+    width: 30px;
+    height: 1px;
+    display: block;
+    transition: 300ms  linear all;
+}
+
+
+.nav-icon span:nth-child(1),
+.nav-icon span:nth-child(3){
+    width: 20px;
+    margin: 0 auto;
+}
+
+.nav-icon span:nth-child(2){
+    margin: 5px 0;
+    width: 32px;
+}
+
+.nav-icon:hover span:nth-child(1),
+.nav-icon:hover span:nth-child(3){
+    width: 30px;
+    margin: 0 auto;
+}
+
+.full-nav{
+    background: #f1c30f;
+    color: #18191d;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 3.75rem;
+    z-index: 99;
+    /*overflow-x: hidden;
+     visibility: hidden; 
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all .4s ease-in-out;
+}
+
+.full-nav.open{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all .4s ease-in-out;
+    z-index: 99;
+}
+
+.full-nav .logo{
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.nav2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav2 ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav2 ul li{
+    display: flex;
+    flex: 50%;
+    background-color: #f1c30f;
+    padding: 1rem;
+    border-bottom: 10px solid #f1c30f;
+    border-right: 10px solid #f1c30f;
+    transition: all 0.5s;
+}
+
+.nav2 ul li a{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4em;
+    color: #333;
+    padding: 0.25rem 0;
+    margin: 0 2.50rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav ul li a:hover{
+    color: #fff;
+}
+
+.nav2 ul li a:hover{
+    color: tomato;
+} */
+
+
+
+
+
+
+
+.container{
+    margin-top: 0%;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+    
+}
+
+.flip-card-container{
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    perspective: 1000px;
+}
+
+.flip-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.flip-card-container.flip .flip-card{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.flip-card-front{
+    background-color: #333;
+    color: #fff;
+}
+
+.flip-card-back{
+    background-color: #517fa4;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.flip-card-front img{
+    width: 100%;
+    height: 100%;
+}

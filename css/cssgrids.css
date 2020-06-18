@@ -1,0 +1,30 @@
+*{
+margin: 10;
+padding: 10;
+}
+.body{
+
+    background: #fff;
+    color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contenedor-galery{
+    width: 90%;
+    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap:20px;
+} 
+
+/* .contenedor-galery div{
+    background: #f1c40f;
+    padding: 1em;
+}
+
+.contenedor-galery div:hover{
+    border: 1px solid #f1c40f;
+} */
+
+
+
