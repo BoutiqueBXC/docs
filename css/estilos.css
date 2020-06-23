@@ -55,7 +55,7 @@
 }
 
 .menu .list-container{
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .menu .list-container .lists{
@@ -99,15 +99,13 @@
 
 /* IMG Header */
 .img-header{
-    position: relative;
     width: 100%;
     height: 100vh;
-    /* padding-top: 60px; */
     background: url(../img/Back/BG_Cards20.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-
+    padding-top: 30px;
 }
 
 .img-header .welcome{
@@ -124,20 +122,21 @@
     font-family: 'Rancho', cursive;
 }
 
-.img-header .container{
-    position: absolute;
+
+
+/* .img-header .container{
+     position: absolute;
     top: 0;
     left: 400px;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0, 30);
-    display: table-footer-group flex;
-
-}
+    display: table-footer-group flex; 
+} */
 
 
 .img-header .welcome h1{
-    font-size: 70px;
+    font-size: 7vh;
     color: #481380;
     font-weight: 200;
 }
@@ -151,12 +150,18 @@
 }
 
 .img-header .welcome p{
-font-size: 50px;
+font-size: 5vh;
 color:#481380;
 margin-top: 20px;
 }
 
-.img-header .welcome > button{
+.img-header .welcome img{
+    width: 50vh;
+    height: 30vh;
+    object-fit: cover;
+} 
+
+/* .img-header .welcome > button{
 width: 150px;
 height: 30px;
 background: #481380;
@@ -174,7 +179,7 @@ transition: 0.5s;
 .img-header .welcome > button:hover{
 background: #efb1ff;
 color:#481380;
-}
+} */
 
 /* Acerca de nosotros */
 
@@ -186,6 +191,7 @@ color:#481380;
     background-position: center;
     background-size: cover;
     padding-top: 30px;
+    font-family: 'Rancho', cursive;
 }
 
 .acerca-de .info-container{
@@ -198,17 +204,17 @@ color:#481380;
 }
 
 .acerca-de .info-container h1{
-    font-size: 70px;
+    font-size: 7vh;
     font-weight: 400;
     color:#481380;
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Rancho', cursive;
+    /* font-family: 'Rancho', cursive; */
 }
 
 .acerca-de .info-container p{
     text-align: center;
-    font-size: 25px;
+    font-size: 5vh;
     color:#481380;
     line-height: 35px;
     margin: 10px 0px;
@@ -220,14 +226,12 @@ color:#481380;
     justify-content: center;
     margin: Auto;
 
-
 }
 
 .acerca-de .about-gallery img{
-    /* width: calc(50% - 20px); */
-    width: 700px;
-    height: 700px;
-
+    width: calc(50% - 20px);
+    /* width: 700px;
+    height: 700px; */
     object-fit: cover;
     margin: 10px 10px;
     padding: 10px;
@@ -244,7 +248,7 @@ color:#481380;
 }
 
 
-.acerca-de .about-more > button{
+/* .acerca-de .about-more > button{
     width: 150px;
     height: 30px;
     background: #481380;
@@ -262,7 +266,7 @@ color:#481380;
 .acerca-de .about-more > button:hover{
     background: #efb1ff;
     color:#481380;
-}
+} */
 
 /* Nuestros proyectos */
 
@@ -309,7 +313,7 @@ color:#481380;
 }
 
 .our-projects .container-project .project-title h2{
-    font-size: 70px;
+    font-size: 7vh;
     color: #481380;
     font-weight: normal;
     font-family: 'Rancho', cursive;
@@ -332,7 +336,7 @@ color:#481380;
 
 .our-projects .container-project .project-img img{
     width: calc(33%-20px);
-    height: 400px;
+    height: 50vh;
     margin: 10px;
     object-fit: cover;
     border-radius: 10px;
@@ -364,7 +368,7 @@ color:#481380;
 
 
 .testimonios .testimonios-title h2{
-    font-size: 70px;
+    font-size: 7vh;
     color: #481380;
     font-weight: normal;
     font-family: 'Rancho', cursive;
@@ -392,8 +396,8 @@ color:#481380;
 }
 
 .testimonios .box-testimonios .card-testimonio .card-img img{
-    width: 200px;
-    height: 200px;
+    width: 20vh;
+    height: 20vh;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -487,7 +491,7 @@ color:#481380;
 }
 
 .footer .footer-content .footer-title h2{
-    font-size: 70px;
+    font-size: 8vh;
     color: #481380;
     font-weight: normal;
     font-family: 'Rancho', cursive;
@@ -509,8 +513,8 @@ color:#481380;
 }
 
  .logo-thania img{
-    width: 250px;
-    height: 150px;
+    width: 30vh;
+    height: 20vh;
     object-fit: cover;
 }
 
@@ -520,8 +524,8 @@ color:#481380;
 .whatsapp{
     position: fixed;
     top: 100px;
-    right: 50px;
-    width: 30px;
+    right: 30px;
+    width: 50px;
     height: 50px;
     z-index: 999;
     justify-content: center;
@@ -529,14 +533,14 @@ color:#481380;
 }
 
  .appWhatsapp img{
-    width: 50px;
-    height: 50px;
+    width: 6vh;
+    height: 6vh;
     object-fit: cover;
 }
 
 .facebook{
     position: fixed;
-    top: 160px;
+    top: 170px;
     right: 30px;
     width: 50px;
     height: 50px;
@@ -546,14 +550,14 @@ color:#481380;
 }
 
  .appFacebook img{
-    width: 60px;
-    height: 60px;
+    width: 7vh;
+    height: 7vh;
     object-fit: cover;
 }
 
 .clip{
     position: fixed;
-    top: 220px;
+    top: 240px;
     right: 30px;
     width: 50px;
     height: 50px;
@@ -563,8 +567,8 @@ color:#481380;
 }
 
  .appClip img{
-    width: 60px;
-    height: 60px;
+    width: 6vh;
+    height: 6vh;
     object-fit: cover;
 }
 
@@ -913,27 +917,7 @@ font-size: 25px;
 
 /* Estilos para dispositivos moviles */
 
-@media only screen and (max-width:800px){
-
-    .logo-thania{
-        position: fixed;
-        bottom: 10px;
-        /* left: 450px; */
-        width: 200px;
-        height: 90px;
-        z-index: 900;
-
-    }
-
-    .logo-thania img{
-        width: 200px;
-        height: 90px;
-        object-fit: cover;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
+ @media only screen and (max-width:640px){
 
 
     .btn-menu > .fa-bars{
@@ -955,18 +939,19 @@ font-size: 25px;
         position: absolute;
         top:70px;
         left:0;
-        width:100%;
-        height: calc(100vh - 60px);
+        width:300px;
+        /* height: calc(600px - 60px); */
+        height: 800px;
         background: #fff;
         cursor: pointer;
     }
     .menu .list-container .lists{
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        /* height: 100%; */
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column; 
         border-top: 5px solid #481380;
     }
 
@@ -978,101 +963,56 @@ font-size: 25px;
     }
 
     .menu .list-container .lists li a{
-        font-size: 25px;
+        font-size: 20px;
     }
 
-    .menu .list-container .lists li a:active{
+    .menu .list-container .lists li a:activo{
         background: #481380;
         color: #fff;
-        border-radius: 5px;
-        font-size: 15px;
+        border-radius: 1px;
+        font-size: 10px;
         transition: 0.3s;
     }
 
+
     .menu .list-container .lists li a:hover{
-        background:  #481380;
+        background:  #7f78d2;
         color: #fff;
     }
 
-    .img-header .welcome h1{
-        font-size: 40px;
-        color: #481380;
-        font-weight: 200;
-    }
 
-    .img-header .welcome hr{
-        width: 400px;
-        height: 2px;
-        background: #7f78d2;
-        border: none;
-        margin-top: 5px;
-    }
-    
-    .img-header .welcome p{
-        font-size: 40px;
-        color:#481380;
-        margin-top: 20px;
-    }
-
-
-    .acerca-de .about-gallery{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        margin: Auto;
-        flex-wrap: wrap;
-    }
-    
-    .acerca-de .about-gallery img{
-        width: 900px;
-        height: 850px;
-    }
-    
-    
-    .testimonios .box-testimonios .card-testimonio{
-        width: 70%;
-        margin: 20px;
-    }
-    
-    .testimonios .box-testimonios .card-testimonio .card-img img{
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-    
-/* Contenedor de productos */
+    /* Contenedor de productos  */
 
     .contenedor-gallery{
-        width: 90%;
+        width: 100%;
         margin: 20px 10px;
-        padding-left:50px;
+        /* padding-left:50px; */
+        padding: 30px 30px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:20px;
     } 
 
 
-/* Carrousel */
+ /* Carrousel  */
 
 
-#carouselExampleControls{
-    width: 100%;
-    height: 50%;
-right: 350px;
-}
+ #carouselExampleControls{
+    width: 330px;
+    height: 250px;
+} 
 
-
-
-/* .carousel-slide {
+ /* .carousel-slide {
     width: 90%;
-    height: 100%;
+    height: 50%;
 
-}
+} */
 
 
-.carousel-slide .carousel-inner {
+
+
+
+/*.carousel-slide .carousel-inner {
 
 
     right: 350px;
@@ -1091,9 +1031,129 @@ right: 350px;
     /* margin-top: 100px; 
 
     /* margin : 30px; 
-} */
+} .carousel-slide .carousel-inner {
+
+
+    right: 350px;
+
+    /* margin-top: 100px;
+    margin-bottom: 100px;
+
+
+    /* margin : 30px; 
+}
+
+.carousel-inner .carousel-item .carousel-img{
+    width: 100%;
+    height: 400px;
+    /* align-items: center;
+    /* margin-top: 100px; 
+
+    /* margin : 30px; 
+} 
+
+
+
+
+
+
+/*
+ .img-header .welcome{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 360px;
+        height: 50%;
+        background: rgba(0, 0, 0, 0, 30);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Rancho', cursive;
+    } 
+    
+    .img-header .container{
+        position: absolute;
+        top: 0;
+        left: 400px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0, 30);
+        display: table-footer-group flex;
+    
+    }
+
+
+
+
+     .img-header .welcome h1{
+        font-size: 20px;
+        color: #481380;
+        font-weight: 200;
+    }
+
+    .img-header .welcome hr{
+        width: 250px;
+        height: 2px;
+        background: #7f78d2;
+        border: none;
+        margin-top: 5px;
+    }
+    
+    .img-header .welcome p{
+        font-size: 25px;
+        color:#481380;
+        margin-top: 20px;
+    }
+
+    .img-header .welcome img{
+        width: 250px;
+        height: 190px;
+    } */
+
+    /* .acerca-de{
+        width: 100%;
+        /* margin-top: 50px; 
+        background: url(../img/Back/BG_Cards15.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        padding-top: 30px;
+    }
+
+     .acerca-de .about-gallery{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin: Auto;
+        flex-wrap: wrap;
+    }
+    
+    .acerca-de .about-gallery img{
+        width: 90%;
+        height: 850px;
+    }
+    
+    
+    .testimonios .box-testimonios .card-testimonio{
+        width: 70%;
+        margin: 20px;
+    }
+    
+    .testimonios .box-testimonios .card-testimonio .card-img img{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+    } */
+    
+
+
+
+
 
 
     
-}
+} 
 
