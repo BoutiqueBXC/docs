@@ -110,8 +110,8 @@
 
 .img-header .welcome{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30px;
+    left: 10px;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0, 30);
@@ -136,23 +136,23 @@
 
 
 .img-header .welcome h1{
-    font-size: 7vh;
+    font-size:8vh;
     color: #481380;
     font-weight: 200;
 }
 
 .img-header .welcome hr{
-    width: 400px;
+    width: 40vh;
     height: 2px;
     background: #7f78d2;
     border: none;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .img-header .welcome p{
-font-size: 5vh;
-color:#481380;
-margin-top: 20px;
+    font-size: 6vh;
+    color:#481380;
+    margin-top: 20px;
 }
 
 .img-header .welcome img{
@@ -336,7 +336,7 @@ color:#481380;
 
 .our-projects .container-project .project-img img{
     width: calc(33%-20px);
-    height: 50vh;
+    height: 30vh;
     margin: 10px;
     object-fit: cover;
     border-radius: 10px;
@@ -396,8 +396,8 @@ color:#481380;
 }
 
 .testimonios .box-testimonios .card-testimonio .card-img img{
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -491,7 +491,7 @@ color:#481380;
 }
 
 .footer .footer-content .footer-title h2{
-    font-size: 8vh;
+    font-size: 7vh;
     color: #481380;
     font-weight: normal;
     font-family: 'Rancho', cursive;
@@ -533,8 +533,8 @@ color:#481380;
 }
 
  .appWhatsapp img{
-    width: 6vh;
-    height: 6vh;
+    width: 7vh;
+    height: 7vh;
     object-fit: cover;
 }
 
@@ -550,8 +550,8 @@ color:#481380;
 }
 
  .appFacebook img{
-    width: 7vh;
-    height: 7vh;
+    width: 8vh;
+    height: 8vh;
     object-fit: cover;
 }
 
@@ -567,8 +567,8 @@ color:#481380;
 }
 
  .appClip img{
-    width: 6vh;
-    height: 6vh;
+    width: 7vh;
+    height: 7vh;
     object-fit: cover;
 }
 
@@ -661,17 +661,19 @@ color:#481380;
     /* bottom: 0;*/
     left: 0; 
     width: 100%;
-    height: 100px;
+    height: 150px;
     background: rgba(0,0,0,.8);
     border-top: 5px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .footer .footer-content .footer-text p{
 color: #fff;
-font-size: 25px;
+font-size: 5vh;
+font-family: 'Rancho', cursive;
 }
 
 
@@ -679,28 +681,18 @@ font-size: 25px;
 
 
 .carousel-inner {
-    width: 100%;
-    height: 100%;
+    width: 70vw;
+    height: 65vh;
     margin-top: 100px;
     margin-bottom: 100px;
-
-    /* margin : 30px; */
 }
 
 .carousel-inner .carousel-item .carousel-img{
     width: 100%;
     height: 700px;
-    /* margin-top: 100px; */
-
-    /* margin : 30px; */
 }
    
 /* Cards */
-
-
-
-
-
    
 /* .container-galery{
     margin-top: 60px;
@@ -845,7 +837,7 @@ font-size: 25px;
     justify-content: center;
     flex-direction: column;
     padding-top: 60px;
-
+    font-family: 'Rancho', cursive;
 }
 
 .productos-container .info-container h1{
@@ -854,7 +846,7 @@ font-size: 25px;
     color:#481380;
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Rancho', cursive;
+
 }
 
 .productos-container .info-container p{
@@ -917,14 +909,25 @@ font-size: 25px;
 
 /* Estilos para dispositivos moviles */
 
- @media only screen and (max-width:640px){
 
+@media only screen and (max-width:1024px){
+
+
+    .contenedor-gallery{
+        width: 100%;
+        margin: 20px 10px;
+        /* padding-left:50px; */
+        padding: 30px 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:20px;
+    } 
 
     .btn-menu > .fa-bars{
         display: block;
         position: absolute;
         top:20px;
-        right: 30px;
+        right: 50px;
         font-size: 28px;
     }
 
@@ -980,6 +983,43 @@ font-size: 25px;
         color: #fff;
     }
 
+ }
+
+
+ @media only screen and (max-width:800px){
+
+    .btn-menu > .fa-bars{
+        display: block;
+        position: absolute;
+        top:20px;
+        right: 40px;
+        font-size: 28px;
+    }
+
+    
+
+
+    /* Contenedor de productos  */
+
+    .contenedor-gallery{
+        width: 100%;
+        margin: 20px 10px;
+        /* padding-left:50px; */
+        padding: 30px 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:20px;
+    } 
+
+ @media only screen and (max-width:670px){
+
+    .btn-menu > .fa-bars{
+        display: block;
+        position: absolute;
+        top:20px;
+        right: 30px;
+        font-size: 28px;
+    }
 
     /* Contenedor de productos  */
 
@@ -994,166 +1034,22 @@ font-size: 25px;
     } 
 
 
- /* Carrousel  */
+    /* Carrousel  */
 
 
- #carouselExampleControls{
-    width: 330px;
-    height: 250px;
-} 
+    /* #carouselExampleControls{
+        width: 330px;
+        height: 250px;
+    }  */
 
- /* .carousel-slide {
-    width: 90%;
-    height: 50%;
+    /* .carousel-inner .carousel-item .carousel-img{
 
-} */
-
-
-
-
-
-/*.carousel-slide .carousel-inner {
-
-
-    right: 350px;
-
-    /* margin-top: 100px;
-    margin-bottom: 100px;
-
-
-    /* margin : 30px; 
-}
-
-.carousel-inner .carousel-item .carousel-img{
-    width: 100%;
-    height: 400px;
-    /* align-items: center;
-    /* margin-top: 100px; 
-
-    /* margin : 30px; 
-} .carousel-slide .carousel-inner {
-
-
-    right: 350px;
-
-    /* margin-top: 100px;
-    margin-bottom: 100px;
-
-
-    /* margin : 30px; 
-}
-
-.carousel-inner .carousel-item .carousel-img{
-    width: 100%;
-    height: 400px;
-    /* align-items: center;
-    /* margin-top: 100px; 
-
-    /* margin : 30px; 
-} 
-
-
-
-
-
-
-/*
- .img-header .welcome{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 360px;
-        height: 50%;
-        background: rgba(0, 0, 0, 0, 30);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-family: 'Rancho', cursive;
-    } 
-    
-    .img-header .container{
-        position: absolute;
-        top: 0;
-        left: 400px;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0, 30);
-        display: table-footer-group flex;
-    
-    }
-
-
-
-
-     .img-header .welcome h1{
-        font-size: 20px;
-        color: #481380;
-        font-weight: 200;
-    }
-
-    .img-header .welcome hr{
-        width: 250px;
-        height: 2px;
-        background: #7f78d2;
-        border: none;
-        margin-top: 5px;
-    }
-    
-    .img-header .welcome p{
-        font-size: 25px;
-        color:#481380;
-        margin-top: 20px;
-    }
-
-    .img-header .welcome img{
-        width: 250px;
-        height: 190px;
-    } */
-
-    /* .acerca-de{
-        width: 100%;
-        /* margin-top: 50px; 
-        background: url(../img/Back/BG_Cards15.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        padding-top: 30px;
-    }
-
-     .acerca-de .about-gallery{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        margin: Auto;
-        flex-wrap: wrap;
-    }
-    
-    .acerca-de .about-gallery img{
-        width: 90%;
-        height: 850px;
-    }
-    
-    
-    .testimonios .box-testimonios .card-testimonio{
-        width: 70%;
-        margin: 20px;
-    }
-    
-    .testimonios .box-testimonios .card-testimonio .card-img img{
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
         object-fit: cover;
-    } */
     
+    }  */
+ }
 
 
 
 
-
-
-    
-} 
 
