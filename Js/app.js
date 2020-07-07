@@ -5,7 +5,7 @@ let activador = true;
 
 btnMenu.addEventListener('click',() => {
 
-    // document.querySelector.classList.toggle('fa-times');
+     
 
         if(activador){
             menu.style.left = "0";
@@ -18,7 +18,7 @@ btnMenu.addEventListener('click',() => {
             
             activador=true;
         }
-
+        //document.querySelector.classList.toggle('fas fa-times');
         
 });
 
