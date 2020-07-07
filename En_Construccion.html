@@ -7,8 +7,11 @@
     <title>Boutique Thania - En Construccion</title>
 <!-- Estilos -->
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="./css/estilos.css">
+<link rel="stylesheet" href="./css/font-awesome.css">
 <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -46,29 +49,50 @@
 
 <!-- Menù de navegaciòn -->
 <header id="header">
-  <nav class="menu">
+  <nav class="contenedor-menu">
     <div class="logo-box">
-      <Div class="logo-thania">
-        <img src="./img/Logo_Boutique_Thania/Logo_Boutique_Thania_1.png" alt="Boutique Thania">
-    </Div>
-        <!-- <h1><a href="">Boutique Thania</a></h1> -->
-        <span class="btn-menu"><i class="fas fa-bars"></i></span>
-    </div>
-    <div class="list-container">
-    <ul class="lists">
-        <li><a href="Index.html" >Inicio</a></li>
-        <li><a href="Blusas.html" >Blusas</a></li>
-        <li><a href="Jeans.html">Jeans</a></li>
-        <li><a href="Sudaderas.html">Sudaderas</a></li>
-        <li><a href="Legins_y_Mayones.html">Leggins y Mayones</a></li>
-        <li><a href="En_Construccion.html">Faldas</a></li>
-        <li><a href="Sueteres.html">Suéteres</a></li>
-        <li><a href="En_Construccion.html">Chamarras</a></li>
-        <li><a href="En_Construccion.html">Ropa deportiva</a></li>
-        <li><a href="En_Construccion.html">Maternidad</a></li>
-        <li><a href="En_Construccion.html">Lencería</a></li>
-        
-    </ul>    
+        <div class="logo-thania">
+            <img src="./img/Logo_Boutique_Thania/Logo_Boutique_Thania_1.png" alt="Boutique Thania">
+        </div>
+          <!-- <span class="btn-menu"><i class="fas fa-bars"></i></span>  -->
+    </div> 
+    <!-- <a href="#" class="btn-menu"><i id="button-menu" class="icono fa fa-bars"></i></a> -->
+    <span id="button-menu" class="fa fa-close"></span>
+    <div class="list-container ">
+        <ul class="menu">
+            <li><a href="index.html"><i class="icono-izquierda fa fa-home"></i> Inicio</a></li>
+            <li ><a href="Blusas.html"><i class="icono-izquierda fa fa-heart"></i> Blusas<i class="icono-derecha fa fa-chevron-down"></i></a>
+              <ul >
+                <li><a href="Blusas_vestir.html"><i class="fa fa-heart"></i> Vestir</a></li>
+                <li><a href="Blusas_casual.html"><i class="fa fa-heart"></i> Casual juvenil</a></li>
+                <li><a href="Blusas_casual_tallas_grandes.html"><i class="fa fa-heart"></i> Casual tallas grandes</a></li>
+              </ul>
+            </li>
+            <li ><a href="Jeans.html"><i class="icono-izquierda fa fa-heart"></i>Jeans<i class="icono-derecha fa fa-chevron-down"></i></a>
+                <ul>
+                    <!-- <li><a href="Jeans.html"><i class="fa fa-heart"></i> Vestir</a></li> -->
+                    <li><a href="Jeans.html"><i class="fa fa-heart"></i> Mezclilla</a></li>
+                    <!-- <li><a href="Jeans.html"><i class="fa fa-heart"></i> Tela</a></li> -->
+                </ul>
+            </li>
+            <li><a href="Sudaderas.html"><i class="icono-izquierda fa fa-heart"></i> Sudaderas</a></li>
+            <li><a href="Sueteres.html"><i class="icono-izquierda fa fa-heart"></i> Suéteres</a></li>
+            <li><a href="Legins_y_Mayones.html"><i class="icono-izquierda fa fa-heart"></i> Legins y Mayones</a></li>
+            <!-- <li ><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i> Faldas<i class="icono-derecha fa fa-chevron-down"></i></a>
+                <ul >
+                    <li><a href="En_Construccion.html"><i class="fa fa-heart"></i> Vestir</a></li>
+                    <li><a href="En_Construccion.html"><i class="fa fa-heart"></i> Mezclilla</a></li>
+                    <li><a href="En_Construccion.html"><i class="fa fa-heart"></i> Tela</a></li>
+                </ul>
+            </li> -->
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Faldas</a></li>
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Chamarras</a></li>
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Ropa Deportiva</a></li>
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Maternidad</a></li>
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Lencería</a></li>
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Accesorios</a></li>
+
+        </ul>
     </div>
 </nav>
 
@@ -175,7 +199,7 @@
 
 
     </section>
-    </main> -->
+    </main> 
 
 
 <br><br>
@@ -224,7 +248,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script src="https://kit.fontawesome.com/48d894536e.js"></script>
-<script src="./Js/app.js"></script>
+<script src="./Js/jquery-3.3.1.js"></script>
+<script src="./Js/main2.js"></script>
+
 
 <script>
     const flipcardcontainer = document.querySelector(".flip-card-container");
