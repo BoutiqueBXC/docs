@@ -8,11 +8,12 @@
 <!-- Estilos -->
 
 <link rel="stylesheet" href="./css/estilos.css">
+<link rel="stylesheet" href="./css/font-awesome.css">
 <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
 
 
@@ -47,28 +48,50 @@
 
 <!-- Menù de navegaciòn -->
 <header id="header">
-  <nav class="menu">
+  <nav class="contenedor-menu">
     <div class="logo-box">
-      <Div class="logo-thania">
-        <img src="./img/Logo_Boutique_Thania/Logo_Boutique_Thania_1.png" alt="Boutique Thania">
-    </Div>
-        <!-- <h1><a href="">Boutique Thania</a></h1> -->
-        <span class="btn-menu"><i class="fas fa-bars"></i></span>
-    </div>
-    <div class="list-container">
-    <ul class="lists">
-        <li><a href="Index.html" >Inicio</a></li>
-        <li><a href="Blusas.html" >Blusas</a></li>
-        <li><a href="Jeans.html">Jeans</a></li>
-        <li><a href="Sudaderas.html" >Sudaderas</a></li>
-        <li><a href="Legins_y_Mayones.html">Leggins y Mayones</a></li>
-        <li><a href="En_Construccion.html">Faldas</a></li>
-        <li><a href="#" class="activo">Suéteres</a></li>
-        <li><a href="En_Construccion.html">Chamarras</a></li>
-        <li><a href="En_Construccion.html">Ropa Deportiva</a></li>
-        <li><a href="En_Construccion.html">Maternidad</a></li>
-        <li><a href="En_Construccion.html">Lencería</a></li>
-    </ul>    
+        <div class="logo-thania">
+            <img src="./img/Logo_Boutique_Thania/Logo_Boutique_Thania_1.png" alt="Boutique Thania">
+        </div>
+          <!-- <span class="btn-menu"><i class="fas fa-bars"></i></span>  -->
+    </div> 
+    <!-- <a href="#" class="btn-menu"><i id="button-menu" class="icono fa fa-bars"></i></a> -->
+    <span id="button-menu" class="fa fa-close"></span>
+    <div class="list-container ">
+        <ul class="menu">
+            <li><a href="index.html"><i class="icono-izquierda fa fa-home"></i> Inicio</a></li>
+            <li ><a href="Blusas.html"><i class="icono-izquierda fa fa-heart"></i> Blusas<i class="icono-derecha fa fa-chevron-down"></i></a>
+              <ul >
+                <li><a href="Blusas_vestir.html"><i class="fa fa-heart"></i> Vestir</a></li>
+                <li><a href="Blusas_casual.html"><i class="fa fa-heart"></i> Casual juvenil</a></li>
+                <li><a href="Blusas_casual_tallas_grandes.html"><i class="fa fa-heart"></i> Casual tallas grandes</a></li>
+              </ul>
+            </li>
+            <li ><a href="Jeans.html"><i class="icono-izquierda fa fa-heart"></i>Jeans<i class="icono-derecha fa fa-chevron-down"></i></a>
+                <ul>
+                    <!-- <li><a href="Jeans.html"><i class="fa fa-heart"></i> Vestir</a></li> -->
+                    <li><a href="Jeans.html"><i class="fa fa-heart"></i> Mezclilla</a></li>
+                    <!-- <li><a href="Jeans.html"><i class="fa fa-heart"></i> Tela</a></li> -->
+                </ul>
+            </li>
+            <li><a href="Sudaderas.html"><i class="icono-izquierda fa fa-heart"></i> Sudaderas</a></li>
+            <li><a href="Sueteres.html"><i class="icono-izquierda fa fa-heart"></i> Suéteres</a></li>
+            <li><a href="Legins_y_Mayones.html"><i class="icono-izquierda fa fa-heart"></i> Legins y Mayones</a></li>
+            <!-- <li ><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i> Faldas<i class="icono-derecha fa fa-chevron-down"></i></a>
+                <ul >
+                    <li><a href="En_Construccion.html"><i class="fa fa-heart"></i> Vestir</a></li>
+                    <li><a href="En_Construccion.html"><i class="fa fa-heart"></i> Mezclilla</a></li>
+                    <li><a href="En_Construccion.html"><i class="fa fa-heart"></i> Tela</a></li>
+                </ul>
+            </li> -->
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Faldas</a></li>
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Chamarras</a></li>
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Ropa Deportiva</a></li>
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Maternidad</a></li>
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Lencería</a></li>
+            <li><a href="En_Construccion.html"><i class="icono-izquierda fa fa-heart"></i>Accesorios</a></li>
+
+        </ul>
     </div>
 </nav>
 
@@ -127,7 +150,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Suéter abierto</h5>
                   <p class="card-text">Suéter abierto con manga 3/4 color negro.</p>
-                  <h4 class="card-title">$420.00</h4>
+                  <!-- <h4 class="card-title">$420.00</h4> -->
                   <div class="Comprar">
                     <button type="button" id="btn-comprar" data-toggle="modal"
                     data-target="#comprar">Comprar</button>
@@ -143,7 +166,7 @@
               <div class="card-body">
                 <h5 class="card-title">Suéter color palo de rosa</h5>
                 <p class="card-text">Suéter color palo de rosa.</p>
-                <h4 class="card-title">$320.00</h4>
+                <!-- <h4 class="card-title">$320.00</h4> -->
                 <div class="Comprar">
                   <button type="button" id="btn-comprar" data-toggle="modal"
                   data-target="#comprar">Comprar</button>
@@ -159,7 +182,7 @@
             <div class="card-body">
               <h5 class="card-title">Suéter cuello de olan</h5>
               <p class="card-text">Suéter cuello de olan color azul marino</p>
-              <h4 class="card-title">$340.00</h4>
+              <!-- <h4 class="card-title">$340.00</h4> -->
               <div class="Comprar">
                 <button type="button" id="btn-comprar" data-toggle="modal"
                 data-target="#comprar">Comprar</button>
@@ -175,7 +198,7 @@
             <div class="card-body">
               <h5 class="card-title">Suéter largo con perlas</h5>
               <p class="card-text">Suéter largo con perlas color gris oxford.</p>
-              <h4 class="card-title">$320.00</h4>       
+              <!-- <h4 class="card-title">$320.00</h4>        -->
               <div class="Comprar">
                 <button type="button" id="btn-comprar" data-toggle="modal"
                 data-target="#comprar">Comprar</button>
@@ -192,7 +215,7 @@
           <div class="card-body">
             <h5 class="card-title">Suéter largo Oliva</h5>
             <p class="card-text">Suéter largo con estampado de Oliva color gris oxford.</p>
-            <h4 class="card-title">$320.00</h4>     
+            <!-- <h4 class="card-title">$320.00</h4>      -->
             <div class="Comprar">
               <button type="button" id="btn-comprar" data-toggle="modal"
               data-target="#comprar">Comprar</button>
@@ -208,7 +231,7 @@
             <div class="card-body">
               <h5 class="card-title">Suéter rayas</h5>
               <p class="card-text">Sueter con textura a rayas color azul celeste.</p>
-              <h4 class="card-title">$280.00</h4>              
+              <!-- <h4 class="card-title">$280.00</h4>               -->
               <div class="Comprar">
                 <button type="button" id="btn-comprar" data-toggle="modal"
                 data-target="#comprar">Comprar</button>
@@ -224,7 +247,7 @@
           <div class="card-body">
             <h5 class="card-title">Suéter largo</h5>
             <p class="card-text">Sueter largo color azul celeste.</p>
-            <h4 class="card-title">$320.00</h4>               
+            <!-- <h4 class="card-title">$320.00</h4>                -->
             <div class="Comprar">
               <button type="button" id="btn-comprar" data-toggle="modal"
               data-target="#comprar">Comprar</button>
@@ -240,7 +263,7 @@
         <div class="card-body">
           <h5 class="card-title">Suéter largo corazones</h5>
           <p class="card-text">Suéter largo con figuras de corazones color Gris con negro .</p>
-          <h4 class="card-title">$320.00</h4>              
+          <!-- <h4 class="card-title">$320.00</h4>               -->
           <div class="Comprar">
             <button type="button" id="btn-comprar" data-toggle="modal"
             data-target="#comprar">Comprar</button>
@@ -256,7 +279,7 @@
       <div class="card-body">
         <h5 class="card-title">Suéter largo con gorro</h5>
         <p class="card-text">Sueter largo abierto color negro con gorro.</p>
-        <h4 class="card-title">$340.00</h4>              
+        <!-- <h4 class="card-title">$340.00</h4>               -->
         <div class="Comprar">
           <button type="button" id="btn-comprar" data-toggle="modal"
           data-target="#comprar">Comprar</button>
@@ -265,7 +288,189 @@
       </div>
     </div>                              
 </div>   
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_010a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter Frida Khalo</h5>
+      <p class="card-text">Sueter Frida Khalo color negro.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>   
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_011a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter con franjas</h5>
+      <p class="card-text">Sueter con franjas color rojo, rosa y gris.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>   
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_012a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter abierto</h5>
+      <p class="card-text">Sueter  abierto color gris.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>  
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_013a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter abierto con gorro </h5>
+      <p class="card-text">Sueter abierto con gorro color Mostaza.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>  
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_014a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter cuello ruso</h5>
+      <p class="card-text">Sueter cuello ruso color gris.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>     
 
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_015a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter largo miel con gorro</h5>
+      <p class="card-text">Sueter largo abierto color miel con gorro.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>   
+
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_016a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter largo arena con gorro</h5>
+      <p class="card-text">Sueter largo abierto color arena con gorro.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>   
+
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_017a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter largo verde con gorro</h5>
+      <p class="card-text">Sueter largo abierto color verde con gorro.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>   
+
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_018a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter largo vino con gorro</h5>
+      <p class="card-text">Sueter largo abierto color vino.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>   
+
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_019a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter largo café</h5>
+      <p class="card-text">Sueter largo cerrado color café.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>   
+
+
+<div class="card">
+  <div class="inner">
+  <img class="card-img-top" src="./img/Sueteres/Sueter_020a.jpg" alt="Card image cap">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Suéter largo rojo con cinturón </h5>
+      <p class="card-text">Sueter largo cerrado color rojo con cinturón.</p>
+      <!-- <h4 class="card-title">$340.00</h4>               -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>   
     </section>
     </main>
 
@@ -384,7 +589,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script src="https://kit.fontawesome.com/48d894536e.js"></script>
-<script src="./Js/app.js"></script>
+<script src="./Js/jquery-3.3.1.js"></script>
+<script src="./Js/main2.js"></script>
+
 
 <script>
     const flipcardcontainer = document.querySelector(".flip-card-container");
