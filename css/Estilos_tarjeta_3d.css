@@ -1,0 +1,40 @@
+.contenedor{
+    height: 300px;
+    width: 250px;
+    margin: auto;
+    -webkit-perspective: 760;
+}
+
+.carta{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2s;
+}
+
+.carta:hover{
+    transform: rotateY(180deg);
+}
+
+.lado{
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.frente{
+    /* background: #f0f0f0; */
+}
+
+.atras{
+    /* background: #f0f0f0; */
+    transform: rotateY(180deg);
+}
+
+img{
+    height: 100%;
+    width: 100%;
+
+}
