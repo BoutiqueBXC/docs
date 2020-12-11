@@ -14,6 +14,8 @@
 <link rel="stylesheet" href="./css/estilos.css">
 <link rel="stylesheet" href="./css/font-awesome.css">
 <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/lightbox.css">
+
 
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -107,13 +109,16 @@
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" >
             <div class="carousel-item active">
-                <img class="carousel-img" src=".\img\Blusas\Blusas_carrusel_5.jpg" alt="First slide">
+                <img class="carousel-img" src=".\img\Blusas\Blusas_de_vestir_carrusel_1.gif" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="carousel-img" src=".\img\Blusas\Blusas_de_vestir_carrusel_2.jpg" alt="Second slide">
+                <img class="carousel-img" src=".\img\Blusas\Blusas_de_vestir_carrusel_2.gif" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="carousel-img" src=".\img\Blusas\Blusas_de_vestir_carrusel_3.jpg" alt="Third slide">
+                <img class="carousel-img" src=".\img\Blusas\Blusas_de_vestir_carrusel_3.gif" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="carousel-img" src=".\img\Blusas\Blusas_de_vestir_carrusel_4.gif" alt="Third slide">
               </div>
             </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -137,164 +142,61 @@
     <section class="productos-container">
         <div class="info-container">
             <h1>Blusas de vestir</h1>
-            <p>Le ofrecemos gran variedad de blusas de vestir.</p>
+            <p>Le ofrecemos gran variedad de blusas de vestir con diferentes texturas, colores, etc.</p>
         </div>
     <br>
         <div class="contenedor-gallery">
 
-      <!-- <div class="card">
-        <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_22a.jpg" alt="Card image cap">
+
+
+          <div class="card">
+            <div class="inner">
+              <a href=".\img\Blusas\Blusa_140a.png" data-lightbox="gallery" data-title="Blusa de encaje color rosa">
+                <img class="card-img-top" src=".\img\Blusas\Blusa_140a.png" alt="Card image cap">
+              </a>
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Blusa de encaje color rosa </h5>
+                <p class="card-text">Blusa de encaje color rosa</p>
+                <!-- <h4 class="card-title">$240.00</h4> -->
+                <div class="Comprar">
+                  <button type="button" id="btn-comprar" data-toggle="modal"
+                  data-target="#comprar">Comprar</button>
+                  <button id="btn-apartar" data-toggle="modal"
+                  data-target="#apartar">Apartar</button>
+              </div>
+            </div>                              
         </div>
-          <div class="card-body">
-            <h5 class="card-title">Blusa de vestir puntos</h5>
-            <p class="card-text">Blusa de vestir color blanco con puntos color rosa.</p>
-             <h4 class="card-title">$220.00</h4> 
-            <div class="Comprar">
-              <button type="button" id="btn-comprar" data-toggle="modal"
-              data-target="#comprar">Comprar</button>
-              <button id="btn-apartar" data-toggle="modal"
-              data-target="#apartar">Apartar</button>
+
+        <div class="card">
+          <div class="inner">
+            <a href=".\img\Blusas\Blusa_142a.png" data-lightbox="gallery" data-title="Blusa de encaje color melón">
+              <img class="card-img-top" src=".\img\Blusas\Blusa_142a.png" alt="Card image cap">
+            </a>
           </div>
-        </div>                              
-      </div>          -->
-      <!-- <div class="card">
-        <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_23a.jpg" alt="Card image cap">
-        </div>
-          <div class="card-body">
-            <h5 class="card-title">Blusa de vestir puntos</h5>
-            <p class="card-text">Blusa de vestir color rojo con puntos color negro.</p>
-             <h4 class="card-title">$220.00</h4>
-            <div class="Comprar">
-              <button type="button" id="btn-comprar" data-toggle="modal"
-              data-target="#comprar">Comprar</button>
-              <button id="btn-apartar" data-toggle="modal"
-              data-target="#apartar">Apartar</button>
-          </div>
-        </div>                              
-      </div>           -->
-      <!-- <div class="card">
-        <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_24a.jpg" alt="Card image cap">
-        </div>
-          <div class="card-body">
-            <h5 class="card-title">Blusa de vestir gatitos</h5>
-            <p class="card-text">Blusa de vestir color azul marino con gatitos.</p>
-             <h4 class="card-title">$220.00</h4>
-            <div class="Comprar">
-              <button type="button" id="btn-comprar" data-toggle="modal"
-              data-target="#comprar">Comprar</button>
-              <button id="btn-apartar" data-toggle="modal"
-              data-target="#apartar">Apartar</button>
-          </div>
-        </div>                              
-      </div> -->
-      <div class="card">
-        <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_25a.jpg" alt="Card image cap">
-        </div>
-          <div class="card-body">
-            <h5 class="card-title">Blusa de vestir flores</h5>
-            <p class="card-text">Blusa de vestir con flores color vino.</p><br>
-            <!-- <h4 class="card-title">$220.00</h4> -->
-            <div class="Comprar">
-              <button type="button" id="btn-comprar" data-toggle="modal"
-              data-target="#comprar">Comprar</button>
-              <button id="btn-apartar" data-toggle="modal"
-              data-target="#apartar">Apartar</button>
-          </div>
-        </div>                              
-      </div>
-      <div class="card">
-        <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_26a.jpg" alt="Card image cap">
-        </div>
-          <div class="card-body">
-            <h5 class="card-title">Blusa de vestir flores 2</h5>
-            <p class="card-text">Blusa de vestir con flores color blanco.</p><br>
-            <!-- <h4 class="card-title">$220.00</h4> -->
-            <div class="Comprar">
-              <button type="button" id="btn-comprar" data-toggle="modal"
-              data-target="#comprar">Comprar</button>
-              <button id="btn-apartar" data-toggle="modal"
-              data-target="#apartar">Apartar</button>
-          </div>
-        </div>                              
-      </div>
-      <!-- <div class="card">
-        <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_46a.jpg" alt="Card image cap">
-        </div>
-          <div class="card-body">
-            <h5 class="card-title">Blusa de Franela Cuadros</h5>
-            <p class="card-text">Blusa de franela cuadros color rojo con negro.</p>
-            <h4 class="card-title">$240.00</h4>
-            <div class="Comprar">
-              <button type="button" id="btn-comprar" data-toggle="modal"
-              data-target="#comprar">Comprar</button>
-              <button id="btn-apartar" data-toggle="modal"
-              data-target="#apartar">Apartar</button>
-          </div>
-        </div>                              
-      </div>
-      <div class="card">
-        <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_47a.jpg" alt="Card image cap">
-        </div>
-          <div class="card-body">
-            <h5 class="card-title">Blusa de mezclilla</h5>
-            <p class="card-text">Blusa de mezclilla.</p>
-            <h4 class="card-title">$240.00</h4>
-            <div class="Comprar">
-              <button type="button" id="btn-comprar" data-toggle="modal"
-              data-target="#comprar">Comprar</button>
-              <button id="btn-apartar" data-toggle="modal"
-              data-target="#apartar">Apartar</button>
-          </div>
-        </div>                              
-      </div> -->
-      <div class="card">
-        <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_33a.jpg" alt="Card image cap">
-        </div>
-          <div class="card-body">
-            <h5 class="card-title">Blusa de vestir</h5>
-            <p class="card-text">Blusa de vestir color negro.</p><br>
-            <!-- <h4 class="card-title">$220.00</h4> -->
-            <div class="Comprar">
-              <button type="button" id="btn-comprar" data-toggle="modal"
-              data-target="#comprar">Comprar</button>
-              <button id="btn-apartar" data-toggle="modal"
-              data-target="#apartar">Apartar</button>
-          </div>
-        </div>                              
-      </div>
-      <div class="card">
-        <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_34a.jpg" alt="Card image cap">
-        </div>
-          <div class="card-body">
-            <h5 class="card-title">Blusa de vestir Voire </h5>
-            <p class="card-text">Blusa de vestir con estampado de Voire  </p>
-            <!-- <h4 class="card-title">$250.00</h4> -->
-            <div class="Comprar">
-              <button type="button" id="btn-comprar" data-toggle="modal"
-              data-target="#comprar">Comprar</button>
-              <button id="btn-apartar" data-toggle="modal"
-              data-target="#apartar">Apartar</button>
-          </div>
-        </div>                              
+            <div class="card-body">
+              <h5 class="card-title">Blusa de encaje color melón </h5>
+              <p class="card-text">Blusa de encaje color melón</p>
+              <!-- <h4 class="card-title">$240.00</h4> -->
+              <div class="Comprar">
+                <button type="button" id="btn-comprar" data-toggle="modal"
+                data-target="#comprar">Comprar</button>
+                <button id="btn-apartar" data-toggle="modal"
+                data-target="#apartar">Apartar</button>
+            </div>
+          </div>                              
       </div>
 
       <div class="card">
         <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_36a.jpg" alt="Card image cap">
+          <a href=".\img\Blusas\Blusa_143a.png" data-lightbox="gallery" data-title="Blusa de likra algodón con gaza manga larga color negro">
+            <img class="card-img-top" src=".\img\Blusas\Blusa_143a.png" alt="Card image cap">
+          </a>
         </div>
           <div class="card-body">
-            <h5 class="card-title">Blusa de vestir de gaza</h5>
-            <p class="card-text">Blusa de vestir de gaza color azul marino.</p>
-            <!-- <h4 class="card-title">$220.00</h4> -->
+            <h5 class="card-title">Blusa de likra algodón con gaza manga larga color negro </h5>
+            <p class="card-text">Blusa de likra algodón con gaza manga larga color negro</p>
+            <!-- <h4 class="card-title">$240.00</h4> -->
             <div class="Comprar">
               <button type="button" id="btn-comprar" data-toggle="modal"
               data-target="#comprar">Comprar</button>
@@ -302,23 +204,275 @@
               data-target="#apartar">Apartar</button>
           </div>
         </div>                              
+    </div>
+
+    <div class="card">
+      <div class="inner">
+        <a href=".\img\Blusas\Blusa_144a.png" data-lightbox="gallery" data-title="Blusa de gaza manga corta color verde cemento">
+          <img class="card-img-top" src=".\img\Blusas\Blusa_144a.png" alt="Card image cap">
+        </a>
       </div>
-      <div class="card">
-        <div class="inner">
-        <img class="card-img-top" src=".\img\Blusas\Blusa_37a.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Blusa de gaza manga corta color verde cemento </h5>
+          <p class="card-text">Blusa de gaza manga corta color verde cemento</p>
+          <!-- <h4 class="card-title">$240.00</h4> -->
+          <div class="Comprar">
+            <button type="button" id="btn-comprar" data-toggle="modal"
+            data-target="#comprar">Comprar</button>
+            <button id="btn-apartar" data-toggle="modal"
+            data-target="#apartar">Apartar</button>
         </div>
-          <div class="card-body">
-            <h5 class="card-title">Blusa de vestir cuello alto</h5>
-            <p class="card-text">Blusa de vestir con cuello alto y encaje frontal color salmón.</p>
-            <!-- <h4 class="card-title">$420.00</h4> -->
-            <div class="Comprar">
-              <button type="button" id="btn-comprar" data-toggle="modal"
-              data-target="#comprar">Comprar</button>
-              <button id="btn-apartar" data-toggle="modal"
-              data-target="#apartar">Apartar</button>
-          </div>
-        </div>                              
+      </div>                              
+  </div>
+
+  <div class="card">
+    <div class="inner">
+      <a href=".\img\Blusas\Blusa_145a.png" data-lightbox="gallery" data-title="PantiBlusa de encaje manga corta color verde">
+        <img class="card-img-top" src=".\img\Blusas\Blusa_145a.png" alt="Card image cap">
+      </a>
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">PantiBlusa de encaje manga corta color verde </h5>
+        <p class="card-text">PantiBlusa de encaje manga corta color verde </p>
+        <!-- <h4 class="card-title">$240.00</h4> -->
+        <div class="Comprar">
+          <button type="button" id="btn-comprar" data-toggle="modal"
+          data-target="#comprar">Comprar</button>
+          <button id="btn-apartar" data-toggle="modal"
+          data-target="#apartar">Apartar</button>
       </div>
+    </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_146a.png" data-lightbox="gallery" data-title="Blusa de encaje manga corta color blanco">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_146a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa de encaje manga corta color blanco </h5>
+      <p class="card-text">Blusa de encaje manga corta color blanco</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_147a.png" data-lightbox="gallery" data-title="Blusa de gaza con estampado de flores manga larga color negro">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_147a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa de gaza con estampado de flores manga larga color negro </h5>
+      <p class="card-text">Blusa de gaza con estampado de flores manga larga color negro</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_148a.png" data-lightbox="gallery" data-title="Blusa de encaje manga corta color blanco">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_148a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa de encaje manga corta color blanco </h5>
+      <p class="card-text">Blusa de encaje manga corta color blanco</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_149a.png" data-lightbox="gallery" data-title="Blusa de gaza con encaje manga larga color beige">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_149a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa de gaza con encaje manga larga color beige </h5>
+      <p class="card-text">Blusa de gaza con encaje manga larga color beige</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_150a.png" data-lightbox="gallery" data-title="Blusa de gaza con encaje manga 3/4 color negro">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_150a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa de gaza con encaje manga 3/4 color negro </h5>
+      <p class="card-text">Blusa de gaza con encaje manga 3/4 color negro</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_151a.png" data-lightbox="gallery" data-title="Blusa de encaje sin manga color negro">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_151a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa de encaje sin manga color negro </h5>
+      <p class="card-text">Blusa de encaje sin manga color negro</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_152a.png" data-lightbox="gallery" data-title="Blusa de manga larga con estampado de flores color beige">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_152a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa de manga larga con estampado de flores color beige </h5>
+      <p class="card-text">Blusa de manga larga con estampado de flores color beige</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_153a.png" data-lightbox="gallery" data-title="PantiBlusa de gaza manga larga con estampado color negro">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_153a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">PantiBlusa de gaza manga larga con estampado color negro </h5>
+      <p class="card-text">PantiBlusa de gaza manga larga con estampado color negro</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_155a.png" data-lightbox="gallery" data-title="Blusa de gaza y likre sin manga color negro">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_155a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa de gaza y likre sin manga color negro </h5>
+      <p class="card-text">Blusa de gaza y likre sin manga color negro</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_156a.png" data-lightbox="gallery" data-title="Blusa de cuadros manga 3/4 color azul marino">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_156a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa de cuadros manga 3/4 color azul marino </h5>
+      <p class="card-text">Blusa de cuadros manga 3/4 color azul marino</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_157a.png" data-lightbox="gallery" data-title="Blusa marinero manga larga multicolor">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_157a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa marinero manga larga multicolor </h5>
+      <p class="card-text">Blusa marinero manga larga multicolor</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
+<div class="card">
+  <div class="inner">
+    <a href=".\img\Blusas\Blusa_158a.png" data-lightbox="gallery" data-title="Blusa sin manga bolas color negro">
+      <img class="card-img-top" src=".\img\Blusas\Blusa_158a.png" alt="Card image cap">
+    </a>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Blusa sin manga bolas color negro </h5>
+      <p class="card-text">Blusa sin manga bolas color negro</p>
+      <!-- <h4 class="card-title">$240.00</h4> -->
+      <div class="Comprar">
+        <button type="button" id="btn-comprar" data-toggle="modal"
+        data-target="#comprar">Comprar</button>
+        <button id="btn-apartar" data-toggle="modal"
+        data-target="#apartar">Apartar</button>
+    </div>
+  </div>                              
+</div>
+
 
 
     </section>
@@ -331,6 +485,7 @@
         <!-- Modal Comprar-->
         <div class="modal fade" id="comprar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
+
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -462,6 +617,7 @@
 <script src="https://kit.fontawesome.com/48d894536e.js"></script>
 <script src="./Js/jquery-3.3.1.js"></script>
 <script src="./Js/main2.js"></script>
+<script src="./Js/lightbox.min.js"></script>
 
 
 <script>
