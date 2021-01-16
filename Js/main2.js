@@ -18,6 +18,10 @@ $(document).ready(function(){
     });
 
     // Mostrar menù
+
+    $('#button-menu').removeClass('fa fa-close').addClass('fa fa-bars');
+    $('.contenedor-menu .menu').slideToggle();
+    
     $('#button-menu').click(function(){
         //  alert('funciono');
 
