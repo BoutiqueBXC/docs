@@ -26,6 +26,14 @@
     width: 100%;
 }
 
+#button-menu{
+    color: #481380;
+    font-size: 40px;
+    cursor: pointer;
+    right: 50px;
+
+}
+
 .contenedor-menu {
     position: fixed;
     top: 0;
@@ -59,10 +67,13 @@
 
 .contenedor-menu .list-container{
     margin-right: 0px;
+    overflow: auto;
 }
 
 .contenedor-menu .list-container .menu{
     display: flex;
+    overflow: auto;
+
 }
 
 .contenedor-menu .list-container .menu li{
@@ -117,6 +128,28 @@
 
 /* IMG Header */
 .img-header{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/Back/BG_Cards27.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+/* IMG Header */
+.img-header_dos{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/Back/BG_Cards28.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: 0px;
+}
+
+/* IMG Header */
+.img-header_tres{
     width: 100%;
     height: 100vh;
     background: url(../img/Back/BG_Cards20.jpg);
@@ -174,6 +207,7 @@
 }
 
 .img-header .welcome img{
+    top:30px;
     width: 50vh;
     height: 30vh;
     object-fit: cover;
@@ -521,19 +555,29 @@ color:#481380;
 
 .logo-thania{
     position: fixed;
-    top: 0px;
-    left: 50px;
-    width: 250px;
-    height: 150px;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 200px;
     z-index: 900;
     justify-content: center;
     align-items: center;
 }
 
  .logo-thania img{
-    width: 30vh;
-    height: 20vh;
+    width: 40vh;
+    height: 25vh;
     object-fit: cover;
+}
+
+.icono-menu{
+    width: 30px;
+    height: 30px;
+}
+
+.icono-menu:hover{
+    width: 60px;
+    height: 60px;
 }
 
 
@@ -946,7 +990,9 @@ font-family: 'Rancho', cursive;
         position: absolute;
         top:20px;
         left:0;
-        width: 800px;
+        width: 500px;
+        height: 700px;
+
         /* min-width: 300px;  */
         margin: 50px;
         display: inline-block;
@@ -960,6 +1006,7 @@ font-family: 'Rancho', cursive;
         align-items: left;
         flex-direction: column; 
         border-top: 5px solid #481380;
+        overflow: auto;
 
     }
 
@@ -1067,23 +1114,27 @@ font-family: 'Rancho', cursive;
 
         /* display: none; */
         position: absolute;
-        top:20px;
+        top:30px;
         left:0;
-        width: 750px;
+        width: 400px;
+        height: 360px;
         /* min-width: 300px;  */
         margin: 50px;
         display: inline-block;
         font-family: 'Rancho', cursive;
         line-height: 18px;
+        overflow: auto;
+
     }
 
     .contenedor-menu .list-container .menu {
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: left;
         flex-direction: column; 
         border-top: 5px solid #481380;
+        /* overflow: auto; */
 
     }
 
@@ -1094,7 +1145,7 @@ font-family: 'Rancho', cursive;
     .contenedor-menu .list-container .menu li a {
         color: #494949;
         display: block;
-        padding: 15px 20px;
+        padding: 10px 10px;
         background: #ffe2ff ;
         text-decoration: none;
         /* margin: 0px 10px;
@@ -1161,6 +1212,17 @@ font-family: 'Rancho', cursive;
         line-height: 18px;
     }
 
+    .contenedor-menu .list-container .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column; 
+        border-top: 5px solid #481380;
+        overflow: auto;
+
+    }
+
 
     #button-menu > .fa-bars {
         padding: 20px;
@@ -1197,7 +1259,7 @@ font-family: 'Rancho', cursive;
         grid-gap:20px;
     } 
 
- @media only screen and (max-width:670px){
+ @media only screen and (max-width:640px){
 
 
     .contenedor-menu .list-container{
@@ -1214,6 +1276,18 @@ font-family: 'Rancho', cursive;
         line-height: 18px;
     }
 
+    .contenedor-menu .list-container .menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column; 
+        border-top: 5px solid #481380;
+        overflow: auto;
+
+    }
+
+
     #button-menu > .fa-bars {
         padding: 20px;
         /* background:#481380; */
@@ -1221,7 +1295,7 @@ font-family: 'Rancho', cursive;
         display: block;
         position: absolute;
         top:50px;
-        right: 30px;
+        right: 60px;
         font-size: 10px;
     }
 
