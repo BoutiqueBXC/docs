@@ -617,7 +617,7 @@ color:#481380;
     object-fit: cover;
 }
 
-.clip{
+.appInstagram{
     position: fixed;
     top: 240px;
     right: 30px;
@@ -628,7 +628,7 @@ color:#481380;
     align-items: center;
 }
 
- .appClip img{
+ .appInstagram img{
     width: 7vh;
     height: 7vh;
     object-fit: cover;
